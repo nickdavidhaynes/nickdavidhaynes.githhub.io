@@ -1,0 +1,113 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      https://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Personal website of Nicholas D. Haynes">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Nicholas D. Haynes</title>
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+		<meta name="msapplication-TileColor" content="#3372DF">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.teal-indigo.min.css" />
+		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+		<style>
+			.center {
+				margin: auto;
+				width: 	50%;
+				}
+		</style>
+	</head>
+	
+	<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+		<!-- <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header"> -->
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+			<header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary-dark">
+				<div class="mdl-layout mdl-layout__header-row">
+					<span class="mdl-layout-title" style="font-size:28px">&nbsp Nicholas D. Haynes<span>
+				</div>
+				
+			</header>
+			<div class="mdl-layout__drawer mdl-color--primary mdl-color-text--white">
+				<span class="mdl-layout-title">  
+					<a target="_blank" href="https://twitter.com/NickDHaynes"><img src="twitter-squared-512px_white.svg" width=30 id="twitter-link"></a> &nbsp
+					<div class="mdl-tooltip" for="twitter-link">
+						@NickDHaynes
+					</div>
+					<a target="_blank" href="https://github.com/nickdavidhaynes"><img src="github-squared-512px_white.svg" width=30 id="github-link"></a> &nbsp
+					<div class="mdl-tooltip" for="github-link">
+						/NickDavidHaynes
+					</div>
+					<a target="_blank" href="https://linkedin.com/in/NickDHaynes"><img src="linkedin-rect-512px_white.svg" width=30 id="linkedin-link"></a>
+					<div class="mdl-tooltip" for="linkedin-link">
+						/in/NickDHaynes
+					</div>
+				</span>
+				
+				<nav class="mdl-navigation mdl-color-text--white">
+					<a class="mdl-navigation__link mdl-color-text--white" href="home_vert_menu.html"><span style="font-size:16px">About me</span></a>
+					<a class="mdl-navigation__link mdl-color-text--white" href="research.html"><span style="font-size:16px">Research</span></a>
+					<a class="mdl-navigation__link mdl-color-text--white" href="resume.html"><span style="font-size:16px">Resume+CV</span></a>
+					<a class="mdl-navigation__link mdl-color-text--white" href="publications.html"><span style="font-size:16px">Publications</span></a>
+					<a class="mdl-navigation__link is-active mdl-color-text--white"><strong><span style="font-size:16px">Side projects</span></strong></a>
+					<a class="mdl-navigation__link mdl-color-text--white" href="contact.html"><span style="font-size:16px">Contact</span></a>
+				</nav>
+			</div>
+			
+      
+			<main class="mdl-layout__content">
+			<!-- -----------------------------------------------------------------------------------------------------------------------------------------------------
+																						  Side projects page
+					----------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+				<section class="section--center mdl-grid">
+					<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--6-col-desktop">
+						<h4>Side projects</h4>
+						<p>In my free time, I like to build things to play with. When I was younger, this usually involved Legos. These days, it's more likely
+						 to be python. Here are a few things I've been building recently -</p>
+						<ul>
+							<li>Bullet 1</li>
+							<li>Bullet 2</li>
+							<li>Bullet 3</li>
+						</ul>
+					</div>
+					<!-- Headshot in desktop mode, hide for tablets and phones -->
+					<div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--top mdl-cell--hide-tablet mdl-cell--hide-phone">
+						<div class="center">
+							<img src="dog.jpg" alt="Headshot" width="300">
+						</div>
+					</div>
+					<!-- No headshot in phone or tablet mode -->
+				</section>
+			</main>
+		</div>
+		<script src="../../material.min.js"></script>
+	</body>
+</html>
