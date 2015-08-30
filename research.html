@@ -1,17 +1,5 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-      https://www.apache.org/licenses/LICENSE-2.0
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -19,20 +7,6 @@
 		<meta name="description" content="Personal website of Nicholas D. Haynes">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Nicholas D. Haynes</title>
-
-		<!-- Add to homescreen for Chrome on Android -->
-		<meta name="mobile-web-app-capable" content="yes">
-		<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
-
-		<!-- Add to homescreen for Safari on iOS -->
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="apple-mobile-web-app-title" content="Material Design Lite">
-		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-
-		<!-- Tile icon for Win8 (144x144 + tile color) -->
-		<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-		<meta name="msapplication-TileColor" content="#3372DF">
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -58,6 +32,10 @@
 			</header>
 			<div class="mdl-layout__drawer mdl-color--primary mdl-color-text--white">
 				<span class="mdl-layout-title">  
+					<a target="_blank" href="mailto:nickdavidhaynes@gmail.com"><img src="email_white.svg" width=30 id="email-link"></a> &nbsp
+					<div class="mdl-tooltip" for="email-link">
+						nickdavidhaynes@gmail.com
+					</div>
 					<a target="_blank" href="https://twitter.com/NickDHaynes"><img src="twitter-squared-512px_white.svg" width=30 id="twitter-link"></a> &nbsp
 					<div class="mdl-tooltip" for="twitter-link">
 						@NickDHaynes
@@ -66,14 +44,14 @@
 					<div class="mdl-tooltip" for="github-link">
 						github.com/NickDavidHaynes
 					</div>
-					<a target="_blank" href="https://linkedin.com/in/NickDHaynes"><img src="linkedin-rect-512px_white.svg" width=30 id="linkedin-link"></a>
+					<a target="_blank" href="https://linkedin.com/in/NickDHaynes"><img src="linkedin-rect-512px_white.svg" width=30 id="linkedin-link"></a> &nbsp
 					<div class="mdl-tooltip" for="linkedin-link">
 						/in/NickDHaynes
 					</div>
 				</span>
 				
 				<nav class="mdl-navigation mdl-color-text--white">
-					<a class="mdl-navigation__link mdl-color-text--white" href="home_vert_menu.html"><span style="font-size:16px">About me</span></a>
+					<a class="mdl-navigation__link mdl-color-text--white" href="index.html"><span style="font-size:16px">About me</span></a>
 					<a class="mdl-navigation__link is-active mdl-color-text--white"><strong><span style="font-size:16px">Research</strong></span></a>
 					<a class="mdl-navigation__link mdl-color-text--white" href="resume.html"><span style="font-size:16px">Resume+CV</span></a>
 					<a class="mdl-navigation__link mdl-color-text--white" href="publications.html"><span style="font-size:16px">Publications</span></a>
@@ -91,30 +69,56 @@
 					<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--6-col-desktop">
 						<h4>Research</h4>
 						
-						<h5 id="lorem1">An overview for non-experts</h5>
+						<h5 id="lorem1">My work in one sentence</h5>
+							<p>
+							I build networks out of digital electronics to study the way that large, interdependent systems behave, and in particular, whether artificial systems
+							can learn to perform tasks that are considered "intelligent."
+							</p>
+						
+						<h5 id="lorem1">A somewhat longer overview</h5>
 						
 						  <p>My research is all about exploring the intersection between machine learning, complex networks, and the physics of information.
-						  But what does that mean?
+						  But what does that mean?</p>
+						  
+						  <p>
+						  Complex, highly interconnected systems are all around us - think about your brain, the internet, or the global economy. What all of these have in common is
+						  that when huge number of individual agents (like neurons, computers, or businesses/consumers) interact with each other in relatively simple ways, immensely complicated
+						  behavior emerges. The emerging interdisciplinary field of <a target="blank_" href="https://en.wikipedia.org/wiki/Network_science">network science</a> studies systems like
+						  these to better understand why they behave the way they do and to try to predict when they will behave well (or catastrophically!).
+						  </p>
+						  
+						  <p>
+						  Arguably, one of the problems with studying complex systems is that, well, they're <em>complex</em>. This means that building systems to do experiments on is hard. For
+						  this reason, most of the effort in network science right now is focused on observing networks that already exist and developing theoretical and computational tools
+						  to try to explain their behavior. What's generally missing are experimental platforms that are easy to build and reconfigure, but complicated enough to produce interesting
+						  behavior that generalizes to real-world systems.
+						  </p>
+						  
+						  <p>
+							  In the <a target="blank_" href="http://www.phy.duke.edu/quantum-electronics-lab">Quantum Electronics Lab</a> at Duke, we use integrated circuits called 
+							  <a target="blank_" href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">field-programmable gate arrays</a> (FGPAs) to build complex networks of digital 
+							  electronics. A typical FPGA contains anywhere from thousands to millions of discrete digital logic elements that can be wired together arbitrarily to form complex 
+							  networks with nearly any desired structure. But most importantly, FPGAs are easy to reconfigure – once a new network is designed, it can be loaded onto an FPGA in a 
+							  matter of seconds, allowing us to quickly create networks with many different topologies and study how their behavior differs.
+						  </p>
+						  
+						  
 						<h5 id="lorem1">A more technical overview</h5>
-						For the expert...
-						<ul>
-							<li>Bullet 1</li>
-							<li>Bullet 2</li>
-							<li>Bullet 3</li>
-						</ul>
+						In progress
+
 						  
 						<h5 id="lorem1">Previous research</h5>
-						Older projects...
 						<ul>
-							<li>Bullet 1</li>
-							<li>Bullet 2</li>
-							<li>Bullet 3</li>
+							<li>May 2013 - Aug 2013: Development of high-speed time-to-digital electronics for quantum key distribution</li>
+							<li>Jan 2012 - May 2013: Mesh-less computational methods for nonlinear partial differential equations (MS thesis)</li>
+							<li>Oct 2009 - May 2013: Characterization of novel optical materials</li>
+							<li>Jan 2010 - May 2011: Theoretical investigation of quantum correlations and implications for quantum computing (undergrad thesis)</li>
 						</ul>
 					</div>
 					<!-- Headshot in desktop mode, hide for tablets and phones -->
 					<div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--top mdl-cell--hide-tablet mdl-cell--hide-phone">
 						<div class="center">
-							<img src="dog.jpg" alt="Headshot" width="300">
+							<img src="headshot.jpg" alt="Headshot" width="300">
 						</div>
 					</div>
 					<!-- No headshot in phone or tablet mode -->

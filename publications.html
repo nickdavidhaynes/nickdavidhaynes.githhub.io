@@ -1,17 +1,5 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-      https://www.apache.org/licenses/LICENSE-2.0
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -19,20 +7,6 @@
 		<meta name="description" content="Personal website of Nicholas D. Haynes">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Nicholas D. Haynes</title>
-
-		<!-- Add to homescreen for Chrome on Android -->
-		<meta name="mobile-web-app-capable" content="yes">
-		<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
-
-		<!-- Add to homescreen for Safari on iOS -->
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="apple-mobile-web-app-title" content="Material Design Lite">
-		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-
-		<!-- Tile icon for Win8 (144x144 + tile color) -->
-		<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-		<meta name="msapplication-TileColor" content="#3372DF">
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -58,6 +32,10 @@
 			</header>
 			<div class="mdl-layout__drawer mdl-color--primary mdl-color-text--white">
 				<span class="mdl-layout-title">  
+					<a target="_blank" href="mailto:nickdavidhaynes@gmail.com"><img src="email_white.svg" width=30 id="email-link"></a> &nbsp
+					<div class="mdl-tooltip" for="email-link">
+						nickdavidhaynes@gmail.com
+					</div>
 					<a target="_blank" href="https://twitter.com/NickDHaynes"><img src="twitter-squared-512px_white.svg" width=30 id="twitter-link"></a> &nbsp
 					<div class="mdl-tooltip" for="twitter-link">
 						@NickDHaynes
@@ -73,7 +51,7 @@
 				</span>
 				
 				<nav class="mdl-navigation mdl-color-text--white">
-					<a class="mdl-navigation__link mdl-color-text--white" href="home_vert_menu.html"><span style="font-size:16px">About me</span></a>
+					<a class="mdl-navigation__link mdl-color-text--white" href="index.html"><span style="font-size:16px">About me</span></a>
 					<a class="mdl-navigation__link mdl-color-text--white" href="research.html"><span style="font-size:16px">Research</span></a>
 					<a class="mdl-navigation__link mdl-color-text--white" href="resume.html"><span style="font-size:16px">Resume+CV</span></a>
 					<a class="mdl-navigation__link is-active mdl-color-text--white"><strong><span style="font-size:16px">Publications</span></strong></a>
@@ -93,22 +71,41 @@
 
 						<h5 id="lorem1">Current projects</h5>
 						<ul>
-						<li>Bullet 1</li>
-						<li>Bullet 2</li>
-						<li>Bullet 3</li>
+							<li>
+								<p><strong>Reservoir computing with a single time-delay autonomous Boolean node</strong> <a target="_blank" href="docs/PRE91_020801_2015.pdf">[PDF]</a></p>
+								<p>N.D. Haynes, M.C. Soriano, D.P. Rosin, I. Fischer, D.J. Gauthier, <em>Physical Review E</em> <strong>91</strong> 020801 (2015).</p>
+								<p><strong>One-sentence abstract:</strong> We built a "network" out of a single digital logic element with feedback and showed that
+								it can be trained to recognize simple input patterns.</p>
+								
+							</li>
+							<li>
+								<p><strong>Transient scaling and resurgence of chimera states in coupled Boolean phase oscillators</strong> <a target="_blank" href="docs/PRE90_030902_2014.pdf">[PDF]</a></p>
+								<p>D.P. Rosin, D. Rontani, N.D. Haynes, E. Sch&ouml;ll, D.J. Gauthier, <em>Physical Review E</em> <strong>90</strong> 030902 (2014).</p>
+								<p><strong>One-sentence abstract:</strong> We experimentally observed order and disorder coexisting (called chimera states) 
+								in complex networks of high-speed digital electronics.</p>
+							</li>
 						</ul>
 						
 						<h5 id="lorem1">Past projects</h5>
 						<ul>
-							<li>Bullet 1</li>
-							<li>Bullet 2</li>
-							<li>Bullet 3</li>
+							<li>
+								<p><strong>Optical and thermal properties of spinel with revised (increased) absorption at 4 to 5 micron wavelengths and comparison with sapphire</strong></p>
+								<p>D.C. Harris, L.F. Johnson, R. Seaver, T. Lewis, G. Turri, M. Bass, D.E. Zelmon, N.D. Haynes, <em>Optical Engineering</em> <strong>52</strong>(8):7113 (2013).							
+							</li>
+							<li>
+								<p><strong>Temperature-dependent Sellmeier equations for rare-earth sesquioxides</strong></p>
+								<p>D.E. Zelmon, J.M. Northridge, N.D. Haynes, D. Perlov, K. Petermann, <em>Applied Optics</em> <strong>53</strong>(16):3824-8 (2013).
+							</li>
+							<li>
+								<p><strong>Impurity concentration and temperature dependence of the refractive indices of Er3+ doped ceramic Y2O3</strong></p>
+								<p>A. Joshi, N.D. Haynes, D.E. Zelmon, O. Stafsudd, R. Shori, <em>Optics Express</em> <strong>20</strong>(4):4428-35 (2012).</p>
+							</li>
 						</ul>
 					</div>
 					<!-- Headshot in desktop mode, hide for tablets and phones -->
 					<div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--top mdl-cell--hide-tablet mdl-cell--hide-phone">
 						<div class="center">
-							<img src="dog.jpg" alt="Headshot" width="300">
+							<img src="headshot.jpg" alt="Headshot" width="300">
 						</div>
 					</div>
 					<!-- No headshot in phone or tablet mode -->
