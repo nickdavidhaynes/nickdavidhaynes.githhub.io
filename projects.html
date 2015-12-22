@@ -14,10 +14,20 @@
 		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
 		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
 		<style>
-			.center {
+			.center 
+			{
 				margin: auto;
 				width: 	50%;
-				}
+			}
+			footer 
+			{
+				width: 100%;
+				bottom: 0;
+				position: fixed;
+				color: #FFF;
+				background-color: #43585E;
+				text-align: center;
+			}
 		</style>
 	</head>
 	
@@ -51,12 +61,12 @@
 				</span>
 				
 				<nav class="mdl-navigation mdl-color-text--white">
-					<a class="mdl-navigation__link mdl-color-text--white" href="index.html"><span style="font-size:16px">About me</span></a>
-					<a class="mdl-navigation__link mdl-color-text--white" href="research.html"><span style="font-size:16px">Research</span></a>
-					<a class="mdl-navigation__link mdl-color-text--white" href="resume.html"><span style="font-size:16px">Resume+CV</span></a>
-					<a class="mdl-navigation__link mdl-color-text--white" href="publications.html"><span style="font-size:16px">Publications</span></a>
-					<a class="mdl-navigation__link is-active mdl-color-text--white"><strong><span style="font-size:16px">Side projects</span></strong></a>
-					<a class="mdl-navigation__link mdl-color-text--white" href="contact.html"><span style="font-size:16px">Contact</span></a>
+					<a class="mdl-navigation__link mdl-color-text--white" href="index.html"><span style="font-size:16px">about me</span></a>
+					<a class="mdl-navigation__link mdl-color-text--white" href="research.html"><span style="font-size:16px">research</span></a>
+					<a class="mdl-navigation__link mdl-color-text--white" href="resume.html"><span style="font-size:16px">resume + cv</span></a>
+					<a class="mdl-navigation__link mdl-color-text--white" href="publications.html"><span style="font-size:16px">publications</span></a>
+					<a class="mdl-navigation__link is-active mdl-color-text--white"><strong><span style="font-size:16px">side projects</span></strong></a>
+					<a class="mdl-navigation__link mdl-color-text--white" href="contact.html"><span style="font-size:16px">contact</span></a>
 				</nav>
 			</div>
 			
@@ -72,14 +82,13 @@
 						 to be python. Here are a few things I've been building recently -</p>
 						 <ul>
 							<li>
+								<p><strong>Nick's perspective on the 2016 elections</strong> <a href=https://dukecampaignstop2016.org/bloggers/nicholas-haynes/>[Duke Campaign Stop 2016]</a></p>
+								<p>Campaign Stop 2016 is a group of undergrad and grad students, plus faculty experts, writing short opinion pieces about issues and happenings along the campaign trail. I'll be contributing a piece about once a month until the election.
+							</li>
+							<li>
 								<p><strong>Classifying handwritten digits using echo state networks</strong> <a target="_blank" href="https://github.com/nickdavidhaynes/MNIST_ESN">[GitHub repo]</a></p>
 								<p>A python script that uses a kind of recurrent neural network called an <a target="_blank" href="http://www.scholarpedia.org/article/Echo_state_network">echo state network</a>
 								to predict handwritten digits from the famous MNIST dataset.</p>
-							</li>
-							<li>
-								<p><strong>Automatic generation of character-level text with echo state networks</strong> <a target="_blank" href="">[GitHub repo]</a></p>
-								<p>A work in progress inspired by <a target="_blank" href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">Andrej Karpathy's awesome blog post</a> on 
-								training recurrent neural networks to generate text. Currently, the networks spit out interesting gibberish.</p>
 							</li>
 							<li>
 								<p><strong>Verilog module for asynchronous communication with FTDI's FT232H USB chip.</strong> <a target="_blank" href="https://github.com/nickdavidhaynes/FT232H_communication">[GitHub repo]</a></p>
@@ -94,6 +103,9 @@
 					</div>
 					<!-- No headshot in phone or tablet mode -->
 				</section>
+				<footer>
+				design elements by <a href=http://www.getmdl.io/>Material Design Lite</a>
+				</footer>
 			</main>
 		</div>
 		<script src="../../material.min.js"></script>
